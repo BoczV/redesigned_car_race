@@ -1,11 +1,14 @@
 package Vehicles;
 
+import java.util.Random;
+
 public abstract class Vehicle {
 
-    private String name;
-    private int normalSpeed;
-    private int actualSpeed;
-    private int distanceTraveled;
+    protected String name;
+    protected int normalSpeed;
+    protected int actualSpeed;
+    protected int distanceTraveled;
+    protected static Random random = new Random();
 
 
     public String getName() {
