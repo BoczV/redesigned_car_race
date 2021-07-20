@@ -40,15 +40,6 @@ public class Race {
 
     }
 
-    private int findLastIndexOfArray(Vehicle[] array){
-        for (int i = 0; i < array.length; i++){
-            if(array[i] == null){
-                return i;
-            }
-        }
-        throw new ArrayIndexOutOfBoundsException();
-    }
-
     public void simulateRace(){
         for(int i = 0; i < hoursOfRace; i++){
             Circumstances.calculateWeather();
