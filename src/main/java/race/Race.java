@@ -30,8 +30,8 @@ public class Race {
             return truckBroken;
         }
 
-        public static void setTruckBroken(){
-            truckBroken = !truckBroken;
+        public static void setTruckBroken(boolean inputTruckBroken){
+            truckBroken = inputTruckBroken;
         }
 
     }
