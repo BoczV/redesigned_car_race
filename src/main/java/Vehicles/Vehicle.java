@@ -1,3 +1,4 @@
+
 package Vehicles;
 
 import java.util.Random;
@@ -15,10 +16,15 @@ public abstract class Vehicle {
         return name;
     }
 
-    public abstract void moveForAnHour();
+    public void moveForAnHour(){
+        this.prepareForLap();
+        distanceTraveled += actualSpeed;
+    };
     protected abstract void prepareForLap();
 
-    public abstract int getDistance();
+    public int getDistance(){
+        return this.distanceTraveled;
+    };
 
     public abstract String getType();
 }
