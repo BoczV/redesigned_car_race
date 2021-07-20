@@ -1,25 +1,18 @@
 package Vehicles;
 
+import race.Race;
+
 public class Motorcycle extends Vehicle{
 
 
     @Override
-    public void moveForAnHour() {
-
-    }
-
-    @Override
     protected void prepareForLap() {
-
-    }
-
-    @Override
-    public int getDistance() {
-        return 0;
+        this.normalSpeed = 100;
+        this.actualSpeed = Race.Circumstances.isRaining()? 5 + random.nextInt(46): normalSpeed;
     }
 
     @Override
     public String getType() {
-        return null;
+        return "Motorcycle";
     }
 }
