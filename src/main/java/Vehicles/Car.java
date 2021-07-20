@@ -5,6 +5,10 @@ import race.Race;
 public class Car extends Vehicle {
 
 
+    public Car(){
+
+    }
+
     @Override
     protected void prepareForLap() {
         this.normalSpeed = 80 + random.nextInt(31);

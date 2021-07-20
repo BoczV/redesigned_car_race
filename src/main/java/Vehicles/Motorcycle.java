@@ -5,6 +5,10 @@ import race.Race;
 public class Motorcycle extends Vehicle{
 
 
+    public Motorcycle(){
+        
+    }
+
     @Override
     protected void prepareForLap() {
         this.normalSpeed = 100;

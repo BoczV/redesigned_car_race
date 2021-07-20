@@ -7,6 +7,10 @@ public class Truck extends Vehicle {
     private int brokenDownCounter;
 
 
+    public Truck(){
+
+    }
+
     @Override
     protected void prepareForLap() {
         if(brokenDown){
