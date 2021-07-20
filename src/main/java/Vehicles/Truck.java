@@ -8,7 +8,7 @@ public class Truck extends Vehicle {
 
 
     public Truck(){
-
+        name = String.valueOf(random.nextInt(1001));
     }
 
     @Override

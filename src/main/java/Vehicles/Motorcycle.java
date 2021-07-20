@@ -4,9 +4,12 @@ import race.Race;
 
 public class Motorcycle extends Vehicle{
 
+    private static int motorcycleCounter = 1;
+
 
     public Motorcycle(){
-        
+        name = "Motorcycle " + motorcycleCounter;
+        motorcycleCounter++;
     }
 
     @Override
