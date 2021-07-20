@@ -22,10 +22,10 @@ You'll have to:
 
     - The race itself, 10 cars, 10 trucks, and 10 motorcycles are created in `Main`
 
-2. Race object has to store all the racers, also let us register them from outside. One race lasts 50 hours.
+2. race.Race object has to store all the racers, also let us register them from outside. One race lasts 50 hours.
 
     - Register a car, truck, or motorcycle into the race with a method called `registerRacer`
-    - Race simulation can be done by `simulateRace()` this will:
+    - race.Race simulation can be done by `simulateRace()` this will:
 - call `moveForAnHour()` on every vehicle 50 times
 - set whether it is raining or not for every hour
     - Prints each vehicle's name, distance traveled, and type with `printRaceResults()`
