@@ -1,8 +1,5 @@
 package race;
 
-import Vehicles.Car;
-import Vehicles.Motorcycle;
-import Vehicles.Truck;
 import Vehicles.Vehicle;
 
 import java.util.Random;
@@ -61,9 +58,8 @@ public class Race {
         }
     }
 
-    public void registerRacer(Vehicle vehicle){
-        int lastIndex = findLastIndexOfArray(vehicles);
-        vehicles[lastIndex] = vehicle;
+    public void registerRacer(Vehicle vehicle, int index){
+        vehicles[index] = vehicle;
     }
 
 
