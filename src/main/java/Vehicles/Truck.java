@@ -8,16 +8,8 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    public int getDistance() {
-        return 0;
-    }
-
-    @Override
     public String getType() {
-        return null;
+        return "Truck";
     }
 
-    public void moveForAnHour() {
-
-    }
 }
